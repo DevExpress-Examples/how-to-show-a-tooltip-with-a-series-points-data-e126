@@ -49,6 +49,7 @@
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
+            this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False;
             series1.ArgumentDataMember = "Products.ProductName";
             series1.DataFilters.ClearAndAddRange(new DevExpress.XtraCharts.DataFilter[] {
             new DevExpress.XtraCharts.DataFilter("Products.CategoryID", "System.Int32", DevExpress.XtraCharts.DataFilterCondition.Equal, 4)});
@@ -59,7 +60,7 @@
         series1};
             this.chartControl1.Size = new System.Drawing.Size(565, 353);
             this.chartControl1.TabIndex = 0;
-            this.chartControl1.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chartControl1_CustomDrawCrosshair);
+            
             // 
             // nwindDataSet
             // 
@@ -85,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 353);
+            this.ClientSize = new System.Drawing.Size(640, 400);
             this.Controls.Add(this.chartControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -109,4 +110,3 @@
         private System.Windows.Forms.BindingSource nwindDataSetBindingSource;
     }
 }
-
