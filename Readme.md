@@ -4,21 +4,29 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WinForms Chart – Display Data Source Values in Crosshair Labels
+
+This example displays values from the underlying data source within crosshair labels in a WinForms Chart. When a user hovers over a chart element, the crosshair cursor appears and shows relevant data source values for the selected point. This feature allows users to explore precise data without additional tooltips or legend lookups.
+
+<img width="632" height="393" alt="Display Data Source Values in Crosshair Labels - WinForms Chart Control, DevExpress" src="https://github.com/user-attachments/assets/bf823c7d-b0a1-486b-a444-414abfafe2c5" />
+
+
+## Implementation Details
+
+Use the [CrosshairLabelPattern](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.SeriesBase.CrosshairLabelPattern) property to specify a crosshair label pattern:
+
+```csharp
+void Form1_Load(object sender, EventArgs e) {
+    chartControl1.Series[0].CrosshairLabelPattern = "Unit price: {UnitPrice}\r\n" +
+                                                    "Units in stock: {UnitsInStock}\r\n" +
+                                                    "Quantity per unit: {QuantityPerUnit}";
+}
+```
+
+## Files to Review
 
 * [Form1.cs](./CS/CustomInfoInTooltips/Form1.cs) (VB: [Form1.vb](./VB/CustomInfoInTooltips/Form1.vb))
-<!-- default file list end -->
-# How to show a tooltip with a series point's data
-
-
-<p>This example demonstrates how to display custom information from the underlying data source in a  tooltip for every series point.</p><p>See also:<br />
-- <a href="https://www.devexpress.com/Support/Center/p/E258">E258</a>;<br />
-- <a href="https://www.devexpress.com/Support/Center/p/E2483">E2483</a>;<br />
-- <a href="https://www.devexpress.com/Support/Center/p/E2188">E2188</a>.</p><p></p>
-
-<br/>
-
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
