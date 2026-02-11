@@ -9,7 +9,7 @@
 
 This example displays values from the underlying data source within crosshair labels in a WinForms Chart. When a user hovers over a chart element, the crosshair cursor appears and shows relevant data source values for the selected point. This feature allows users to explore precise data without additional tooltips or legend lookups.
 
-<img width="632" height="393" alt="Display Data Source Values in Crosshair Labels - WinForms Chart Control, DevExpress" src="https://github.com/user-attachments/assets/bf823c7d-b0a1-486b-a444-414abfafe2c5" />
+![Display Data Source Values in Crosshair Labels](resulting-chart.png)
 
 
 ## Implementation Details
