@@ -29,7 +29,7 @@ void Form1_Load(object sender, EventArgs e) {
 * [Form1.cs](./CS/CustomInfoInTooltips/Form1.cs) (VB: [Form1.vb](./VB/CustomInfoInTooltips/Form1.vb))
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-crosshair-label&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-crosshair-label&~~~was_helpful=no)
 
